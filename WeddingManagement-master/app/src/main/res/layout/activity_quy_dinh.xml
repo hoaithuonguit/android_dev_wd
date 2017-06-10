@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout_6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:paddingTop="55dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    >
+
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tabhost">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtQuyDinh"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:text="QUY ĐỊNH"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="20dp"
+                    />
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+
+                    android:textSize="17dp"
+                    android:textColor="#000000"
+                    android:id="@+id/txtNoiDung"/>
+                    <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bạn có muốn sử dụng hình phạt không "
+                    android:textOn="Có"
+                    android:textOff="Không"
+                    android:textSize="17dp"
+                    android:padding="10dp"
+                    android:id="@+id/swcquydinh"
+                    />
+                    </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1.Cập nhật món ăn"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:padding="10dp"
+                                android:id="@+id/txtCapNhatMonAn"
+                                />
+                            <ListView
+                                android:layout_width="match_parent"
+                                android:layout_height="400dp"
+                                android:id="@+id/lsv_CapNhatMonAn"
+                                android:layout_below="@+id/txtCapNhatMonAn">
+
+                            </ListView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2.Cập nhật dịch vụ"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:padding="10dp"
+                                android:id="@+id/txtcapnhatdichvu"
+                                android:layout_below="@+id/rltbackgroundMonAn"
+                                />
+                            <ListView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="500dp"
+                                android:id="@+id/lsv_CapNhatDichVu"
+                                android:layout_below="@+id/txtcapnhatdichvu">
+
+                            </ListView>
+
+                            <LinearLayout
+                                android:layout_marginTop="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_gravity="bottom"
+                                android:layout_centerInParent="true"
+                                android:background="#BDBDBD"
+                                android:id="@+id/rltbackgroundMonAn"
+                                android:orientation="horizontal"
+                                android:layout_below="@+id/lsv_CapNhatMonAn"
+                                >
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/btnThemMonAn"
+                                    android:text="Thêm"
+
+                                    android:layout_weight="1"
+                                    />
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/btnXoaMonAn"
+                                    android:text="Xóa"
+
+                                    android:layout_weight="1"
+                                    />
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/btnSuaMonAn"
+                                    android:text="Sửa"
+
+                                    android:layout_weight="1"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_marginTop="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_gravity="bottom"
+                                android:layout_centerInParent="true"
+                                android:background="#BDBDBD"
+                                android:id="@+id/rltbackgroundDichVu"
+                                android:orientation="horizontal"
+                                android:layout_below="@+id/lsv_CapNhatDichVu"
+                                >
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/btnThemDichVu"
+                                    android:text="Thêm"
+
+                                    android:layout_weight="1"
+                                    />
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/btnXoaDichVu"
+                                    android:text="Xóa"
+
+                                    android:layout_weight="1"
+                                    />
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/btnSuaDichVu"
+                                    android:text="Sửa"
+
+                                    android:layout_weight="1"
+                                    />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    </include>
+    <include
+        layout="@layout/navigation_view"></include>
+</android.support.v4.widget.DrawerLayout>

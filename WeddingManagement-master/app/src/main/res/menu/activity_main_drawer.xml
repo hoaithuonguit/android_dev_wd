@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/sanh_item"
+            android:icon="@drawable/ring"
+            android:title="Tiếp nhận sảnh" />
+        <item
+            android:id="@+id/tracuu_item"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="Tra cứu" />
+        <item
+            android:id="@+id/hoadon_item"
+            android:icon="@drawable/bill"
+            android:title="Lập hóa đơn" />
+
+        <item
+            android:id="@+id/baocao_item"
+            android:icon="@drawable/baocao_item"
+            android:title="Báo cáo" />
+        <item
+            android:id="@+id/quydinh_item"
+            android:icon="@drawable/law"
+            android:title="Quy định" />
+    </group>
+
+
+</menu>

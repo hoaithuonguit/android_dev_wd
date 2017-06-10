@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="stt"
+        android:id="@+id/txtstt_baocao"
+        android:textSize="18dp"/>
+
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"/>
+
+
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Ngày"
+        android:id="@+id/txtNgay_baocao"
+        android:paddingLeft="15dp"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="SL tiệc cưới"
+        android:id="@+id/txtsl_baocao"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Doanh thu(Triệu)"
+        android:paddingLeft="5dp"
+        android:id="@+id/txtDoanhThu"
+        android:textSize="18dp"/>
+
+
+
+
+
+</LinearLayout>

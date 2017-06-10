@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Mã HD:"
+    android:id="@+id/txtMaHD"
+    android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:text="Mã KH:"
+            android:id="@+id/txtMaKH_hoadon_lichsu"
+            android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày Thanh Toán:"
+                android:layout_gravity="center|start"
+                android:id="@+id/txtNgay_hoadon_lichsu"
+                android:textSize="20dp"/>
+
+</LinearLayout>
